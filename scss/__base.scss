@@ -1,0 +1,44 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.row>* {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+}
+.page-title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 0;
+    color: $primary-text-color;
+}
+.page-paragraph {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: $primary-text-color;
+}
+.section-wrapper { 
+    padding-top: 110px;
+    @include responsive_mobile() {
+        padding-top: 80px;
+    }
+}
+.thumb-url {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+ 
+.card {
+    padding: 0;
+    background: white;
+    border: 1px solid #F1F1F1;
+    box-shadow: 0px 3px 7px #d8d8d8;
+    border-radius: 6px;
+}

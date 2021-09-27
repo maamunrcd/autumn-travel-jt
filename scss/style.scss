@@ -1,0 +1,26 @@
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+@import './_responsive_mixins';
+@import './_colors';
+@import './_base';
+@import './_fonts';
+
+
+// sections
+@import './_navbar';
+@import './_footer';
+
+// pages
+@import './_home';
+@import './_about';
+

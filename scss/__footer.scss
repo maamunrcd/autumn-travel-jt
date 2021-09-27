@@ -1,0 +1,41 @@
+
+//Footer 
+footer {
+    padding: 35px 0;
+    border-top: 4px solid #297CBA;
+    .nav {
+        .nav-item {
+            .nav-link {
+                padding: 0;
+                padding-right: 60px;
+                color: $primary-text-color;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+                @include responsive_tab() {
+                    padding-right: 30px;
+                }
+                @include responsive_mobile() {
+                    padding-right: 0;
+                    text-align: center;
+                    padding: 10px 0;
+                }
+
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .copyright {
+        color: #757575;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        @include responsive_mobile() {
+            margin-top: 30px;
+        }
+    }
+}
