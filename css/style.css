@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300&display=swap");
 /* line 1, ../scss/style.scss */
 body {
@@ -302,85 +303,99 @@ footer .copyright {
     bottom: 20px;
   }
 }
-/* line 32, ../scss/__home.scss */
-.slider-wrapper .carousel-indicators button {
+/* line 33, ../scss/__home.scss */
+.slider-wrapper .carousel-indicators [data-bs-target] {
+  position: relative;
+  width: 60px;
+  border: none;
+  border-radius: 24px;
   width: 33.3333%;
   margin-left: 10px;
   margin-right: 10px;
   height: 1px;
-  background: rgba(255, 255, 255, 0.5);
+  background: white;
   border: 0;
 }
-/* line 39, ../scss/__home.scss */
-.slider-wrapper .carousel-indicators button.active {
-  height: 3px;
-  border-radius: 3;
-  background: rgba(255, 255, 255, 0.7);
+/* line 45, ../scss/__home.scss */
+.slider-wrapper .carousel-indicators .active {
+  height: 4px;
+  top: -2px;
 }
-/* line 47, ../scss/__home.scss */
+/* line 50, ../scss/__home.scss */
+.slider-wrapper .carousel-indicators [data-bs-target] span {
+  content: ’’;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #297CBA;
+  border-radius: inherit;
+}
+/* line 61, ../scss/__home.scss */
 .slider-wrapper .carousel-item img.img-fluid, .slider-wrapper .carousel-item picture {
   margin: auto !important;
   display: block;
   min-width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 47, ../scss/__home.scss */
+  /* line 61, ../scss/__home.scss */
   .slider-wrapper .carousel-item img.img-fluid, .slider-wrapper .carousel-item picture {
     width: 100%;
     height: auto;
   }
 }
-/* line 57, ../scss/__home.scss */
+/* line 71, ../scss/__home.scss */
 .slider-wrapper .carousel-caption {
   left: 0;
   right: 0;
   bottom: 61px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 57, ../scss/__home.scss */
+  /* line 71, ../scss/__home.scss */
   .slider-wrapper .carousel-caption {
     bottom: 50px;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 57, ../scss/__home.scss */
+  /* line 71, ../scss/__home.scss */
   .slider-wrapper .carousel-caption {
     bottom: 30px;
   }
 }
 
-/* line 71, ../scss/__home.scss */
+/* line 85, ../scss/__home.scss */
 .viewing-highlights .highlights-view-item {
   margin: 7px 0;
 }
-/* line 73, ../scss/__home.scss */
+/* line 87, ../scss/__home.scss */
 .viewing-highlights .highlights-view-item .page-paragraph {
   padding: 0 80px;
   margin-bottom: 45px;
 }
-/* line 77, ../scss/__home.scss */
+/* line 91, ../scss/__home.scss */
 .viewing-highlights .highlights-view-item .highlights-view-item-thumb {
   border-radius: 6px;
 }
-/* line 79, ../scss/__home.scss */
+/* line 93, ../scss/__home.scss */
 .viewing-highlights .highlights-view-item .highlights-view-item-thumb img {
   min-width: 100%;
 }
-/* line 83, ../scss/__home.scss */
+/* line 97, ../scss/__home.scss */
 .viewing-highlights .highlights-view-item .carousel-caption {
   left: 0;
   right: 15%;
   padding: 0 25px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 83, ../scss/__home.scss */
+  /* line 97, ../scss/__home.scss */
   .viewing-highlights .highlights-view-item .carousel-caption {
     padding: 0 16px;
     left: 0;
     right: 0;
   }
 }
-/* line 93, ../scss/__home.scss */
+/* line 107, ../scss/__home.scss */
 .viewing-highlights .highlights-view-item .tag {
   font-size: 14px;
   font-weight: 600;
@@ -388,54 +403,54 @@ footer .copyright {
   margin-bottom: 10px;
   display: inline-block;
 }
-/* line 100, ../scss/__home.scss */
+/* line 114, ../scss/__home.scss */
 .viewing-highlights .highlights-view-item .thumb-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 100, ../scss/__home.scss */
+  /* line 114, ../scss/__home.scss */
   .viewing-highlights .highlights-view-item .thumb-title {
     font-size: 24px;
     line-height: 28px;
   }
 }
-/* line 111, ../scss/__home.scss */
+/* line 125, ../scss/__home.scss */
 .viewing-highlights .section-header .page-paragraph {
   padding: 0 70px;
   margin-bottom: 25px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 111, ../scss/__home.scss */
+  /* line 125, ../scss/__home.scss */
   .viewing-highlights .section-header .page-paragraph {
     padding: 0;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 111, ../scss/__home.scss */
+  /* line 125, ../scss/__home.scss */
   .viewing-highlights .section-header .page-paragraph {
     padding: 0;
   }
 }
 
-/* line 127, ../scss/__home.scss */
+/* line 141, ../scss/__home.scss */
 .heighlight-view-small-wrapper .card, .book-your-trip .card {
   margin: 7px 0;
   box-shadow: 0px 3px 7px #d8d8d8;
   border: none;
 }
-/* line 132, ../scss/__home.scss */
+/* line 146, ../scss/__home.scss */
 .heighlight-view-small-wrapper .card-thumb, .book-your-trip .card-thumb {
   border-radius: 6px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-/* line 136, ../scss/__home.scss */
+/* line 150, ../scss/__home.scss */
 .heighlight-view-small-wrapper .card-thumb img, .book-your-trip .card-thumb img {
   min-width: 100%;
 }
-/* line 140, ../scss/__home.scss */
+/* line 154, ../scss/__home.scss */
 .heighlight-view-small-wrapper .tag, .book-your-trip .tag {
   font-size: 14px;
   font-weight: 600;
@@ -445,16 +460,16 @@ footer .copyright {
   color: #FFFFFF;
 }
 @media only screen and (max-width: 767px) {
-  /* line 140, ../scss/__home.scss */
+  /* line 154, ../scss/__home.scss */
   .heighlight-view-small-wrapper .tag, .book-your-trip .tag {
     bottom: 30px;
   }
 }
-/* line 152, ../scss/__home.scss */
+/* line 166, ../scss/__home.scss */
 .heighlight-view-small-wrapper .card-body, .book-your-trip .card-body {
   padding: 15px;
 }
-/* line 155, ../scss/__home.scss */
+/* line 169, ../scss/__home.scss */
 .heighlight-view-small-wrapper .category, .book-your-trip .category {
   font-size: 14px;
   font-weight: 400;
@@ -462,24 +477,24 @@ footer .copyright {
   color: #757575;
 }
 @media only screen and (max-width: 767px) {
-  /* line 155, ../scss/__home.scss */
+  /* line 169, ../scss/__home.scss */
   .heighlight-view-small-wrapper .category, .book-your-trip .category {
     margin-bottom: 5px;
   }
 }
-/* line 165, ../scss/__home.scss */
+/* line 179, ../scss/__home.scss */
 .heighlight-view-small-wrapper .card-title, .book-your-trip .card-title {
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
 }
-/* line 170, ../scss/__home.scss */
+/* line 184, ../scss/__home.scss */
 .heighlight-view-small-wrapper .page-paragraph, .book-your-trip .page-paragraph {
   font-size: 16px;
   color: #757575;
   margin: 0;
 }
-/* line 176, ../scss/__home.scss */
+/* line 190, ../scss/__home.scss */
 .heighlight-view-small-wrapper .price-cost span, .book-your-trip .price-cost span {
   font-size: 18px;
   font-weight: 600;
@@ -487,38 +502,38 @@ footer .copyright {
   color: #141414;
 }
 
-/* line 185, ../scss/__home.scss */
+/* line 199, ../scss/__home.scss */
 .discover-areas #location-map {
   position: sticky;
   top: 110px;
   width: 100%;
 }
-/* line 189, ../scss/__home.scss */
+/* line 203, ../scss/__home.scss */
 .discover-areas #location-map a path {
   transition: all .5s;
 }
-/* line 192, ../scss/__home.scss */
+/* line 206, ../scss/__home.scss */
 .discover-areas #location-map a path:hover {
   fill: #297CBA;
 }
-/* line 195, ../scss/__home.scss */
+/* line 209, ../scss/__home.scss */
 .discover-areas #location-map a path:hover + path {
   fill: white;
 }
-/* line 198, ../scss/__home.scss */
+/* line 212, ../scss/__home.scss */
 .discover-areas #location-map a.active path {
   fill: #297CBA;
 }
-/* line 201, ../scss/__home.scss */
+/* line 215, ../scss/__home.scss */
 .discover-areas #location-map a.active path + path {
   fill: white;
 }
-/* line 205, ../scss/__home.scss */
+/* line 219, ../scss/__home.scss */
 .discover-areas .section-header {
   margin-bottom: 70px;
 }
 
-/* line 209, ../scss/__home.scss */
+/* line 223, ../scss/__home.scss */
 .location-wrapper {
   position: relative;
   /* Track */
@@ -526,57 +541,57 @@ footer .copyright {
   /* Handle on hover */
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 209, ../scss/__home.scss */
+  /* line 223, ../scss/__home.scss */
   .location-wrapper {
     padding-right: 10px;
   }
 }
-/* line 215, ../scss/__home.scss */
+/* line 229, ../scss/__home.scss */
 .location-wrapper::-webkit-scrollbar {
   width: 10px;
 }
-/* line 220, ../scss/__home.scss */
+/* line 234, ../scss/__home.scss */
 .location-wrapper::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px transparent;
   border-radius: 10px;
 }
-/* line 226, ../scss/__home.scss */
+/* line 240, ../scss/__home.scss */
 .location-wrapper::-webkit-scrollbar-thumb {
   background: transparent;
   border-radius: 10px;
 }
-/* line 232, ../scss/__home.scss */
+/* line 246, ../scss/__home.scss */
 .location-wrapper::-webkit-scrollbar-thumb:hover {
   background: transparent;
 }
-/* line 235, ../scss/__home.scss */
+/* line 249, ../scss/__home.scss */
 .location-wrapper .location-item {
   padding-right: 50px;
   padding-bottom: 80px;
   position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 235, ../scss/__home.scss */
+  /* line 249, ../scss/__home.scss */
   .location-wrapper .location-item {
     padding-right: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 235, ../scss/__home.scss */
+  /* line 249, ../scss/__home.scss */
   .location-wrapper .location-item {
     padding-right: 20px;
     padding-bottom: 40px;
   }
 }
-/* line 249, ../scss/__home.scss */
+/* line 263, ../scss/__home.scss */
 .location-wrapper .location-item.active::after {
   background: #297CBA;
 }
-/* line 253, ../scss/__home.scss */
+/* line 267, ../scss/__home.scss */
 .location-wrapper .location-item.active .round-circle::before {
   border: 3px solid #297CBA;
 }
-/* line 256, ../scss/__home.scss */
+/* line 270, ../scss/__home.scss */
 .location-wrapper .location-item.active .round-circle::after {
   content: "";
   position: absolute;
@@ -590,7 +605,7 @@ footer .copyright {
   top: 18px;
   z-index: 2;
 }
-/* line 271, ../scss/__home.scss */
+/* line 285, ../scss/__home.scss */
 .location-wrapper .location-item::after {
   content: "";
   position: absolute;
@@ -600,13 +615,13 @@ footer .copyright {
   right: 0;
   top: 10px;
 }
-/* line 280, ../scss/__home.scss */
+/* line 294, ../scss/__home.scss */
 .location-wrapper .location-item .round-circle {
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 284, ../scss/__home.scss */
+/* line 298, ../scss/__home.scss */
 .location-wrapper .location-item .round-circle::before {
   content: "";
   position: absolute;
@@ -621,7 +636,7 @@ footer .copyright {
   right: -10px;
   z-index: 1;
 }
-/* line 299, ../scss/__home.scss */
+/* line 313, ../scss/__home.scss */
 .location-wrapper .location-item .card {
   padding: 15px;
   background: white;
@@ -629,11 +644,11 @@ footer .copyright {
   box-shadow: 0px 3px 7px #d8d8d8;
   border-radius: 6px;
 }
-/* line 306, ../scss/__home.scss */
+/* line 320, ../scss/__home.scss */
 .location-wrapper .location-item .card-body {
   padding: 0;
 }
-/* line 309, ../scss/__home.scss */
+/* line 323, ../scss/__home.scss */
 .location-wrapper .location-item .card-title {
   font-size: 18px;
   font-weight: 600;
@@ -651,73 +666,73 @@ footer .copyright {
   max-height: 50px;
   /* fallback */
 }
-/* line 323, ../scss/__home.scss */
+/* line 337, ../scss/__home.scss */
 .location-wrapper .location-item .time-duration-action {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #141414;
 }
-/* line 328, ../scss/__home.scss */
+/* line 342, ../scss/__home.scss */
 .location-wrapper .location-item .time-duration-action .time-duration {
   display: flex;
   justify-items: center;
 }
-/* line 331, ../scss/__home.scss */
+/* line 345, ../scss/__home.scss */
 .location-wrapper .location-item .time-duration-action .time-duration img {
   margin-right: 10px;
 }
-/* line 336, ../scss/__home.scss */
+/* line 350, ../scss/__home.scss */
 .location-wrapper .location-item .location-small-map {
   height: 45px;
 }
-/* line 339, ../scss/__home.scss */
+/* line 353, ../scss/__home.scss */
 .location-wrapper .location-item .location-title {
   font-size: 28px;
   font-weight: 700;
   line-height: 35px;
 }
-/* line 345, ../scss/__home.scss */
+/* line 359, ../scss/__home.scss */
 .location-wrapper .location-item .location-description a {
   color: #297CBA;
   text-decoration: underline;
 }
 
-/* line 352, ../scss/__home.scss */
+/* line 366, ../scss/__home.scss */
 .build-your-trip {
   padding-bottom: 100px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 352, ../scss/__home.scss */
+  /* line 366, ../scss/__home.scss */
   .build-your-trip {
     padding-bottom: 70px;
   }
 }
-/* line 357, ../scss/__home.scss */
+/* line 371, ../scss/__home.scss */
 .build-your-trip .trip-wrapper {
   padding: 56px 350px;
   background: #F3F7FC;
   border-radius: 6px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 357, ../scss/__home.scss */
+  /* line 371, ../scss/__home.scss */
   .build-your-trip .trip-wrapper {
     padding: 56px 200px;
   }
 }
 @media only screen and (min-width: 550px) and (max-width: 991px) {
-  /* line 357, ../scss/__home.scss */
+  /* line 371, ../scss/__home.scss */
   .build-your-trip .trip-wrapper {
     padding: 56px 100px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 549px) {
-  /* line 357, ../scss/__home.scss */
+  /* line 371, ../scss/__home.scss */
   .build-your-trip .trip-wrapper {
     padding: 50px 32px;
   }
 }
-/* line 370, ../scss/__home.scss */
+/* line 384, ../scss/__home.scss */
 .build-your-trip .trip-wrapper .btn {
   padding: 10px 42px;
   font-size: 18px;
