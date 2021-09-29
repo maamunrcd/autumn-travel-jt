@@ -130,15 +130,9 @@
         border: none;
     }
     .card-thumb {
-        max-height: 168px;
-        overflow: hidden;
         border-radius: 6px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        @include responsive_mobile() {
-            max-height: 250px;
-    
-        }
             img {
                 min-width: 100%;
             }

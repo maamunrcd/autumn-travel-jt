@@ -427,23 +427,15 @@ footer .copyright {
 }
 /* line 132, ../scss/__home.scss */
 .heighlight-view-small-wrapper .card-thumb, .book-your-trip .card-thumb {
-  max-height: 168px;
-  overflow: hidden;
   border-radius: 6px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-@media only screen and (max-width: 767px) {
-  /* line 132, ../scss/__home.scss */
-  .heighlight-view-small-wrapper .card-thumb, .book-your-trip .card-thumb {
-    max-height: 250px;
-  }
-}
-/* line 142, ../scss/__home.scss */
+/* line 136, ../scss/__home.scss */
 .heighlight-view-small-wrapper .card-thumb img, .book-your-trip .card-thumb img {
   min-width: 100%;
 }
-/* line 146, ../scss/__home.scss */
+/* line 140, ../scss/__home.scss */
 .heighlight-view-small-wrapper .tag, .book-your-trip .tag {
   font-size: 14px;
   font-weight: 600;
@@ -453,16 +445,16 @@ footer .copyright {
   color: #FFFFFF;
 }
 @media only screen and (max-width: 767px) {
-  /* line 146, ../scss/__home.scss */
+  /* line 140, ../scss/__home.scss */
   .heighlight-view-small-wrapper .tag, .book-your-trip .tag {
     bottom: 30px;
   }
 }
-/* line 158, ../scss/__home.scss */
+/* line 152, ../scss/__home.scss */
 .heighlight-view-small-wrapper .card-body, .book-your-trip .card-body {
   padding: 15px;
 }
-/* line 161, ../scss/__home.scss */
+/* line 155, ../scss/__home.scss */
 .heighlight-view-small-wrapper .category, .book-your-trip .category {
   font-size: 14px;
   font-weight: 400;
@@ -470,24 +462,24 @@ footer .copyright {
   color: #757575;
 }
 @media only screen and (max-width: 767px) {
-  /* line 161, ../scss/__home.scss */
+  /* line 155, ../scss/__home.scss */
   .heighlight-view-small-wrapper .category, .book-your-trip .category {
     margin-bottom: 5px;
   }
 }
-/* line 171, ../scss/__home.scss */
+/* line 165, ../scss/__home.scss */
 .heighlight-view-small-wrapper .card-title, .book-your-trip .card-title {
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
 }
-/* line 176, ../scss/__home.scss */
+/* line 170, ../scss/__home.scss */
 .heighlight-view-small-wrapper .page-paragraph, .book-your-trip .page-paragraph {
   font-size: 16px;
   color: #757575;
   margin: 0;
 }
-/* line 182, ../scss/__home.scss */
+/* line 176, ../scss/__home.scss */
 .heighlight-view-small-wrapper .price-cost span, .book-your-trip .price-cost span {
   font-size: 18px;
   font-weight: 600;
@@ -495,38 +487,38 @@ footer .copyright {
   color: #141414;
 }
 
-/* line 191, ../scss/__home.scss */
+/* line 185, ../scss/__home.scss */
 .discover-areas #location-map {
   position: sticky;
   top: 110px;
   width: 100%;
 }
-/* line 195, ../scss/__home.scss */
+/* line 189, ../scss/__home.scss */
 .discover-areas #location-map a path {
   transition: all .5s;
 }
-/* line 198, ../scss/__home.scss */
+/* line 192, ../scss/__home.scss */
 .discover-areas #location-map a path:hover {
   fill: #297CBA;
 }
-/* line 201, ../scss/__home.scss */
+/* line 195, ../scss/__home.scss */
 .discover-areas #location-map a path:hover + path {
   fill: white;
 }
-/* line 204, ../scss/__home.scss */
+/* line 198, ../scss/__home.scss */
 .discover-areas #location-map a.active path {
   fill: #297CBA;
 }
-/* line 207, ../scss/__home.scss */
+/* line 201, ../scss/__home.scss */
 .discover-areas #location-map a.active path + path {
   fill: white;
 }
-/* line 211, ../scss/__home.scss */
+/* line 205, ../scss/__home.scss */
 .discover-areas .section-header {
   margin-bottom: 70px;
 }
 
-/* line 215, ../scss/__home.scss */
+/* line 209, ../scss/__home.scss */
 .location-wrapper {
   position: relative;
   /* Track */
@@ -534,57 +526,57 @@ footer .copyright {
   /* Handle on hover */
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 215, ../scss/__home.scss */
+  /* line 209, ../scss/__home.scss */
   .location-wrapper {
     padding-right: 10px;
   }
 }
-/* line 221, ../scss/__home.scss */
+/* line 215, ../scss/__home.scss */
 .location-wrapper::-webkit-scrollbar {
   width: 10px;
 }
-/* line 226, ../scss/__home.scss */
+/* line 220, ../scss/__home.scss */
 .location-wrapper::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px transparent;
   border-radius: 10px;
 }
-/* line 232, ../scss/__home.scss */
+/* line 226, ../scss/__home.scss */
 .location-wrapper::-webkit-scrollbar-thumb {
   background: transparent;
   border-radius: 10px;
 }
-/* line 238, ../scss/__home.scss */
+/* line 232, ../scss/__home.scss */
 .location-wrapper::-webkit-scrollbar-thumb:hover {
   background: transparent;
 }
-/* line 241, ../scss/__home.scss */
+/* line 235, ../scss/__home.scss */
 .location-wrapper .location-item {
   padding-right: 50px;
   padding-bottom: 80px;
   position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 241, ../scss/__home.scss */
+  /* line 235, ../scss/__home.scss */
   .location-wrapper .location-item {
     padding-right: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 241, ../scss/__home.scss */
+  /* line 235, ../scss/__home.scss */
   .location-wrapper .location-item {
     padding-right: 20px;
     padding-bottom: 40px;
   }
 }
-/* line 255, ../scss/__home.scss */
+/* line 249, ../scss/__home.scss */
 .location-wrapper .location-item.active::after {
   background: #297CBA;
 }
-/* line 259, ../scss/__home.scss */
+/* line 253, ../scss/__home.scss */
 .location-wrapper .location-item.active .round-circle::before {
   border: 3px solid #297CBA;
 }
-/* line 262, ../scss/__home.scss */
+/* line 256, ../scss/__home.scss */
 .location-wrapper .location-item.active .round-circle::after {
   content: "";
   position: absolute;
@@ -598,7 +590,7 @@ footer .copyright {
   top: 18px;
   z-index: 2;
 }
-/* line 277, ../scss/__home.scss */
+/* line 271, ../scss/__home.scss */
 .location-wrapper .location-item::after {
   content: "";
   position: absolute;
@@ -608,13 +600,13 @@ footer .copyright {
   right: 0;
   top: 10px;
 }
-/* line 286, ../scss/__home.scss */
+/* line 280, ../scss/__home.scss */
 .location-wrapper .location-item .round-circle {
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 290, ../scss/__home.scss */
+/* line 284, ../scss/__home.scss */
 .location-wrapper .location-item .round-circle::before {
   content: "";
   position: absolute;
@@ -629,7 +621,7 @@ footer .copyright {
   right: -10px;
   z-index: 1;
 }
-/* line 305, ../scss/__home.scss */
+/* line 299, ../scss/__home.scss */
 .location-wrapper .location-item .card {
   padding: 15px;
   background: white;
@@ -637,11 +629,11 @@ footer .copyright {
   box-shadow: 0px 3px 7px #d8d8d8;
   border-radius: 6px;
 }
-/* line 312, ../scss/__home.scss */
+/* line 306, ../scss/__home.scss */
 .location-wrapper .location-item .card-body {
   padding: 0;
 }
-/* line 315, ../scss/__home.scss */
+/* line 309, ../scss/__home.scss */
 .location-wrapper .location-item .card-title {
   font-size: 18px;
   font-weight: 600;
@@ -659,73 +651,73 @@ footer .copyright {
   max-height: 50px;
   /* fallback */
 }
-/* line 329, ../scss/__home.scss */
+/* line 323, ../scss/__home.scss */
 .location-wrapper .location-item .time-duration-action {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #141414;
 }
-/* line 334, ../scss/__home.scss */
+/* line 328, ../scss/__home.scss */
 .location-wrapper .location-item .time-duration-action .time-duration {
   display: flex;
   justify-items: center;
 }
-/* line 337, ../scss/__home.scss */
+/* line 331, ../scss/__home.scss */
 .location-wrapper .location-item .time-duration-action .time-duration img {
   margin-right: 10px;
 }
-/* line 342, ../scss/__home.scss */
+/* line 336, ../scss/__home.scss */
 .location-wrapper .location-item .location-small-map {
   height: 45px;
 }
-/* line 345, ../scss/__home.scss */
+/* line 339, ../scss/__home.scss */
 .location-wrapper .location-item .location-title {
   font-size: 28px;
   font-weight: 700;
   line-height: 35px;
 }
-/* line 351, ../scss/__home.scss */
+/* line 345, ../scss/__home.scss */
 .location-wrapper .location-item .location-description a {
   color: #297CBA;
   text-decoration: underline;
 }
 
-/* line 358, ../scss/__home.scss */
+/* line 352, ../scss/__home.scss */
 .build-your-trip {
   padding-bottom: 100px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 358, ../scss/__home.scss */
+  /* line 352, ../scss/__home.scss */
   .build-your-trip {
     padding-bottom: 70px;
   }
 }
-/* line 363, ../scss/__home.scss */
+/* line 357, ../scss/__home.scss */
 .build-your-trip .trip-wrapper {
   padding: 56px 350px;
   background: #F3F7FC;
   border-radius: 6px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 363, ../scss/__home.scss */
+  /* line 357, ../scss/__home.scss */
   .build-your-trip .trip-wrapper {
     padding: 56px 200px;
   }
 }
 @media only screen and (min-width: 550px) and (max-width: 991px) {
-  /* line 363, ../scss/__home.scss */
+  /* line 357, ../scss/__home.scss */
   .build-your-trip .trip-wrapper {
     padding: 56px 100px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 549px) {
-  /* line 363, ../scss/__home.scss */
+  /* line 357, ../scss/__home.scss */
   .build-your-trip .trip-wrapper {
     padding: 50px 32px;
   }
 }
-/* line 376, ../scss/__home.scss */
+/* line 370, ../scss/__home.scss */
 .build-your-trip .trip-wrapper .btn {
   padding: 10px 42px;
   font-size: 18px;
