@@ -3,8 +3,8 @@ body{
     height: 100%;
     padding: 0;
     margin: 0;
+    position: relative;
 }
-
 *{
     box-sizing: border-box;
 }
@@ -22,5 +22,4 @@ body{
 
 // pages
 @import './_home';
-@import './_about';
 

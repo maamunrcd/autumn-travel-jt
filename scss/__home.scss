@@ -47,6 +47,7 @@
         img.img-fluid, picture {
             margin: auto !important;
             display: block;
+            min-width: 100%;
             @include responsive_mobile() {
                 width: 100%;
                 height: auto;
@@ -83,6 +84,11 @@
             left: 0;
             right: 15%;
             padding: 0 25px;
+            @include responsive_mobile() {
+                padding: 0 16px;
+                left: 0;
+                right: 0;
+            }
         }
         .tag {
             font-size: 14px;
@@ -95,6 +101,10 @@
             font-size: 30px;
             font-weight: 700;
             line-height: 36px;
+            @include responsive_mobile() {
+                font-size: 24px;
+                line-height: 28px;
+            }
         }
     }
     .section-header {
@@ -153,6 +163,10 @@
         font-weight: 400;
         line-height: 18px;
         color: #757575;
+        @include responsive_mobile() {
+            margin-bottom: 5px;
+    
+        }
     }
     .card-title {
         font-size: 18px;
@@ -175,7 +189,8 @@
 }
 .discover-areas {
     #location-map {
-        position: relative;
+        position: sticky;
+        top: 110px;
         width: 100%;
         a path {
             transition: all .5s;
@@ -199,10 +214,6 @@
 }
 .location-wrapper {
     position: relative;
-    height: 900px;
-    margin-top: .5rem;
-    overflow: auto;
-    padding-right: 20px;
     @include responsive_tab() {
         padding-right: 10px;
 
@@ -236,6 +247,7 @@
         }
         @include responsive_mobile() {
             padding-right: 20px;
+            padding-bottom: 40px;
     
         }
         position: relative;
@@ -320,6 +332,8 @@
             line-height: 20px;
             color: #141414;
             .time-duration {
+                display: flex;
+                justify-items: center;
                 img {
                     margin-right: 10px;
                 }

@@ -1,5 +1,11 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    @include responsive_mobile() {
+        padding: 0 10px;
+    }
+}
+figure {
+    margin: 0;
 }
 .row>* {
     padding-left: 7px !important;
